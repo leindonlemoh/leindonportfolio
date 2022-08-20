@@ -1,0 +1,11 @@
+.main .section-image {
+  min-width: 100%;
+  height: auto;
+  height: 80vh;
+  background: rgba(0, 20, 31, 0.7) url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=sectionImage.css.map */

@@ -1,0 +1,13 @@
+footer {
+  height: 130px;
+  background-color: #00141f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: white;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=footer.css.map */
