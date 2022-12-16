@@ -38,54 +38,48 @@
   padding: 0;
   border-radius: 25px;
 }
-.main section:nth-child(1) .sectionOneContent .wrapper {
+.main section:nth-child(1) .sectionOneContent .container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 25px;
 }
-.main section:nth-child(1) .sectionOneContent .wrapper .static-txt {
-  color: #00141f;
-  font-size: 40px;
-  font-weight: 100;
-}
-.main section:nth-child(1) .sectionOneContent .wrapper .dynamic-txts {
-  margin-left: 1px;
-  line-height: 90px;
-  height: 90px;
+.main section:nth-child(1) .sectionOneContent .container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
   overflow: hidden;
 }
-.main section:nth-child(1) .sectionOneContent .dynamic-txts li {
-  list-style: none;
+.main section:nth-child(1) .sectionOneContent .container p span.typed-text {
+  font-weight: normal;
   color: #00141f;
-  font-size: 60px;
-  font-weight: 400;
-  position: relative;
-  top: 0;
-  animation: slide 12s steps(4) infinite;
 }
-@keyframes slide {
-  100% {
-    top: -360px;
+.main section:nth-child(1) .sectionOneContent .container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.main section:nth-child(1) .sectionOneContent .container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
   }
-}
-.main section:nth-child(1) .sectionOneContent .dynamic-txts li {
-  position: relative;
-}
-.main section:nth-child(1) .sectionOneContent .dynamic-txts li::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #e6e1db;
-  border-left: 5px solid #00141f;
-  animation: typing 3s steps(7) infinite;
-}
-@keyframes typing {
-  40%, 60% {
-    left: calc(100% + 30px);
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
   }
 }
 
@@ -255,6 +249,17 @@
     80% {
       top: 0;
     }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .main section:nth-child(1) .sectionOneContent {
+    margin-left: 10px;
+    margin-top: 200px;
+    width: 10000px;
+    background-color: #e6e1db;
+    height: 250px;
+    padding: 0;
+    border-radius: 25px;
   }
 }
 
