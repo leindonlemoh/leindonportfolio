@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "../Link";
+import Logo from "./images/icon.png";
 
 import "./styles/AppBar.scss";
 
@@ -22,7 +23,7 @@ const AppBar = (index) => {
             onClick={() => onTabClick(index)}
             href="/"
           >
-            Navbar
+            <img src={Logo} className="logo" alt="Logo" />
           </Link>
           <button
             className="navbar-toggler"

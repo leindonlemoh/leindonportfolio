@@ -1,6 +1,9 @@
 .section-appbar {
   width: 100vw;
 }
+.collapse {
+  margin-left: 150px;
+}
 nav {
   width: 100%;
 }
@@ -10,4 +13,22 @@ nav {
 }
 .active {
   font-weight: bolder;
+}
+.logo {
+  height: 50px;
+  width: 20px;
+
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -10px;
+}
+.logo:hover {
+  border-radius: 50%;
+  background: rgb(46, 47, 52);
+  background: radial-gradient(
+    circle,
+    rgba(46, 47, 52, 1) 0%,
+    rgba(108, 111, 124, 1) 47%,
+    rgba(204, 208, 226, 1) 100%
+  );
 }
