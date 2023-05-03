@@ -1,0 +1,286 @@
+.section-contact {
+  width: 100%;
+  height: 60vh;
+  background-color: #2e2f34;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+
+  .contact-top {
+    color: #fea12e;
+    margin-bottom: 50px;
+  }
+  .contact-bot {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 30px;
+  }
+  .Button-Contacts {
+    height: 60px;
+    width: 350px;
+    background-color: #36363e;
+    display: flex;
+    flex-direction: row;
+    .email-href {
+      width: 100%;
+      height: 100%;
+      margin-top: -1px;
+      font-size: 15px;
+      text-align: center;
+      color: #fea12e;
+      a {
+        text-align: center;
+        width: 100%;
+      }
+      p {
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+    }
+    .emailcopyIcon {
+      border-left: 1px solid #fea12e;
+      width: 20%;
+
+      .email-copy {
+        height: 100%;
+        color: #fea12e;
+      }
+    }
+    .phone-button {
+      width: 100%;
+      p {
+        text-align: center;
+        margin-top: 20px;
+        color: #fea12e;
+      }
+    }
+
+    // skype
+    .skype {
+      width: 100%;
+
+      text-align: center;
+
+      a {
+        text-decoration: none;
+      }
+      p {
+        margin-top: 20px;
+        color: #fea12e;
+        height: 100%;
+      }
+    }
+    .fb {
+      width: 100%;
+      text-align: center;
+      a {
+        text-decoration: none;
+        p {
+          margin-top: 20px;
+          text-decoration: none;
+          color: #fea12e;
+        }
+      }
+    }
+  }
+}
+.phone-input {
+  border: none;
+  background-color: white;
+  text-align: center;
+  margin-left: 60px;
+}
+.phone-copy {
+  width: 100%;
+  margin-left: 50px;
+}
+
+// 768px
+@media screen and (max-width: 768px) {
+  .section-contact {
+    width: 100%;
+    height: 70vh;
+    background-color: #2e2f34;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+
+    .contact-top {
+      color: #fea12e;
+    }
+    .contact-bot {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .Button-Contacts {
+      height: 60px;
+      width: 280px;
+      background-color: #36363e;
+      display: flex;
+      flex-direction: row;
+
+      .email-href {
+        width: 100%;
+        height: 100%;
+        margin-top: -1px;
+        font-size: 15px;
+        text-align: center;
+        a {
+          // margin-top: 50px;
+          text-align: center;
+          width: 100%;
+          p {
+            margin-top: 20px;
+            margin-left: 50px;
+          }
+        }
+      }
+      .emailcopyIcon {
+        width: 20%;
+        .email-copy {
+          height: 100%;
+        }
+      }
+      .phone-button {
+        width: 100%;
+        p {
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+
+      // skype
+      .skype {
+        width: 100%;
+
+        text-align: center;
+        a {
+          text-decoration: none;
+        }
+        p {
+          margin-top: 20px;
+        }
+      }
+      .fb {
+        width: 100%;
+        text-align: center;
+        a {
+          text-decoration: none;
+          p {
+            margin-top: 20px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .phone-input {
+    border: none;
+    background-color: white;
+    text-align: center;
+    margin-left: 60px;
+  }
+  .phone-copy {
+    width: 100%;
+    margin-left: 50px;
+  }
+}
+// 375px
+@media screen and (max-width: 375px) {
+  .section-contact {
+    width: 100%;
+    height: 70vh;
+    background-color: #2e2f34;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+
+    .contact-top {
+      color: #fea12e;
+    }
+    .contact-bot {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .Button-Contacts {
+      height: 60px;
+      width: 280px;
+      background-color: #36363e;
+      display: flex;
+      flex-direction: row;
+
+      .email-href {
+        width: 100%;
+        height: 100%;
+        margin-top: -1px;
+        font-size: 15px;
+        text-align: center;
+        a {
+          // margin-top: 50px;
+          text-align: center;
+          width: 100%;
+          p {
+            margin-top: 20px;
+            margin-left: 50px;
+          }
+        }
+      }
+      .emailcopyIcon {
+        width: 20%;
+        .email-copy {
+          height: 100%;
+        }
+      }
+      .phone-button {
+        width: 100%;
+        p {
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+
+      // skype
+      .skype {
+        width: 100%;
+
+        text-align: center;
+        a {
+          text-decoration: none;
+        }
+        p {
+          margin-top: 20px;
+        }
+      }
+      .fb {
+        width: 100%;
+        text-align: center;
+        a {
+          text-decoration: none;
+          p {
+            margin-top: 20px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .phone-input {
+    border: none;
+    background-color: white;
+    text-align: center;
+    margin-left: 60px;
+  }
+  .phone-copy {
+    width: 100%;
+    margin-left: 50px;
+  }
+}

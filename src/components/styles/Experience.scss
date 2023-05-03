@@ -1,0 +1,44 @@
+.section-experience {
+  background-color: #2e2f34;
+  width: 100%;
+  margin-left: -1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  box-shadow: 1px 5px 2px 1px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: 1px 5px 2px 1px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: 1px 5px 2px 1px rgba(0, 0, 0, 0.79);
+  .content-right {
+    background-color: white;
+    border-radius: 25px;
+  }
+  .content-left {
+    background-color: white;
+    border-radius: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .section-experience {
+    .separator {
+      display: none;
+    }
+
+    .content-right {
+      background-color: white;
+      border-radius: 25px;
+      margin-left: -270px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    .content-left {
+      background-color: white;
+      border-radius: 25px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-right: -270px;
+    }
+  }
+}

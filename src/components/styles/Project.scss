@@ -1,0 +1,121 @@
+.section-projects {
+  width: 100%;
+  height: 100%;
+  background-color: #2e2f34;
+  h3 {
+    color: #ffff3f;
+    padding-top: 50px;
+    text-align: center;
+  }
+}
+
+.content-project {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.card-image:hover {
+  background-color: black;
+  opacity: 0.7;
+}
+
+// 768
+@media screen and (max-width: 768px) {
+  .section-projects {
+    width: 100%;
+    height: 100%;
+    background-color: #2e2f34;
+    h3 {
+      color: #ffff3f;
+      padding-top: 50px;
+      text-align: center;
+    }
+  }
+
+  .content-project {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+// 575px
+@media screen and (max-width: 575px) {
+  .section-projects {
+    width: 100%;
+    height: 100%;
+    background-color: #2e2f34;
+    h3 {
+      color: #ffff3f;
+      padding-top: 0;
+      text-align: center;
+    }
+  }
+
+  .content-project {
+    height: 100%;
+    padding: 20px 10px 20px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+// 425px
+@media screen and (max-width: 425px) {
+  .section-projects {
+    width: 100%;
+    height: 100%;
+    background-color: #2e2f34;
+    h3 {
+      color: #ffff3f;
+      padding-top: 0;
+      text-align: center;
+    }
+  }
+
+  .content-project {
+    height: 100%;
+    padding: 20px 10px 20px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+// 375px
+@media screen and (max-width: 375px) {
+  .section-projects {
+    width: 100%;
+    height: 100%;
+    background-color: #2e2f34;
+    h3 {
+      color: #ffff3f;
+      padding-top: 0;
+      text-align: center;
+    }
+  }
+
+  .content-project {
+    height: 100%;
+    padding: 20px 10px 20px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}

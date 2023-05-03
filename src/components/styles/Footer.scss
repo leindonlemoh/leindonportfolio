@@ -1,0 +1,16 @@
+.footer-container {
+  width: 100%;
+}
+.footer-content {
+  border-top: 2px solid yellow;
+  display: flex;
+  color: white;
+  height: 50px;
+  font-weight: 900;
+  background-color: #343a40;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  overflow-y: hidden;
+}
