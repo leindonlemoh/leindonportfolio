@@ -1,44 +1,64 @@
 .section-experience {
   background-color: #2e2f34;
   width: 100%;
-  margin-left: -1px;
+  height: 99vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
-  box-shadow: 1px 5px 2px 1px rgba(0, 0, 0, 0.79);
-  -webkit-box-shadow: 1px 5px 2px 1px rgba(0, 0, 0, 0.79);
-  -moz-box-shadow: 1px 5px 2px 1px rgba(0, 0, 0, 0.79);
-  .content-right {
-    background-color: white;
-    border-radius: 25px;
-  }
-  .content-left {
-    background-color: white;
-    border-radius: 25px;
+  h2 {
+    color: #ffff3f;
   }
 }
 
+.ui.styled.accordion .title {
+  background-color: #2e2f34;
+  border-top: 3px solid white;
+  color: white;
+  font-size: 20px;
+}
+.ui.styled.accordion .active.title {
+  background-color: #2e2f34;
+  color: #ffff3f;
+}
+
+.ui.accordion .active.content {
+  border: 1px solid #c3bacc;
+  background-color: #2e2f34;
+  color: #ffff3f;
+  text-align: center;
+}
+
+// 425px
+@media screen and (max-width: 425px) {
+  .section-experience {
+    background-color: #2e2f34;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    h2 {
+      font-size: 20px;
+    }
+  }
+}
+
+// 375px
 @media screen and (max-width: 375px) {
   .section-experience {
-    .separator {
-      display: none;
-    }
-
-    .content-right {
-      background-color: white;
-      border-radius: 25px;
-      margin-left: -270px;
-      margin-top: 5px;
-      margin-bottom: 10px;
-    }
-    .content-left {
-      background-color: white;
-      border-radius: 25px;
-      margin-top: 5px;
-      margin-bottom: 5px;
-      margin-right: -270px;
+    background-color: #2e2f34;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    h2 {
+      font-size: 20px;
     }
   }
 }
