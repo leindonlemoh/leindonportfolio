@@ -1,8 +1,9 @@
 import React from "react";
 import "./styles/Project.scss";
-import "./styles/Projects.scss";
+
 import Plebecite from "./images/1stproject.png";
 import Calculator from "./images/calucu.png";
+import Todo from "./images/todo.png";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -45,6 +46,7 @@ const Projects = () => {
               </CardActionArea>
             </Card>
           </div>
+          {/* calculator */}
           <div className="project">
             {/* calculator */}
             <Card sx={{ maxWidth: 345, borderRadius: "10% 10% 13% 8% " }}>
@@ -69,6 +71,33 @@ const Projects = () => {
                     A web based calculator using eval()
                     <br />
                     Tools : Html Css JavaScript
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </div>
+          {/* todo */}
+          <div className="project">
+            {/* calculator */}
+            <Card sx={{ maxWidth: 345, borderRadius: "10% 10% 13% 8% " }}>
+              <CardActionArea>
+                <a href="https://task-todo-eight.vercel.app/" target="_blank">
+                  <CardMedia
+                    component="img"
+                    className="card-image"
+                    height="140"
+                    image={Todo}
+                    alt="green iguana"
+                  />
+                </a>
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Calculator
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    A Task creator
+                    <br />
+                    Tools : React.Js Css Mui Bootstrap
                   </Typography>
                 </CardContent>
               </CardActionArea>
