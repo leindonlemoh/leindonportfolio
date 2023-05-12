@@ -92,7 +92,7 @@ const Projects = () => {
                 </a>
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
-                    Calculator
+                    Todo List
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
                     A Task creator
