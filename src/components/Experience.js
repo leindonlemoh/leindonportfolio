@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles/Experience.scss";
-
-const Experience = ({ expItems }) => {
+import { expItems } from "./ExpItems";
+const Experience = () => {
   const [activeClass, setActiveClass] = useState(null);
 
   // ontitle click function

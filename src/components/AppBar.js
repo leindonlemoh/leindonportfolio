@@ -1,71 +1,74 @@
 import React, { useState } from "react";
 import Link from "../Link";
 import Logo from "./images/icon.png";
+import Hamburgerbar from"./images/hamburgerbar.png"
 
-import "./styles/AppBar.scss";
+// import "./styles/AppBar.scss";
 
-const AppBar = (index) => {
-  const [activeTab, setActivetab] = useState(null);
-  const active = index === activeTab ? "active" : "";
-  const onTabClick = (Link) => {
-    console.log("index");
-    setActivetab(index);
-  };
+const AppBar = ({setTab,current}) => {
+const[show,setShow]=useState(false)
+const tabs = ['Profile','Skills/Tools','Projects','Experience']
+
+
+
   return (
-    <div className="section-appbar">
+    <div className={`bg-[#2b3035] 
+
+${show == false ? 'h-[80px]':'h-[250px]'}
+laptop:h-[70px]
+    `}>
       <nav
-        className="navbar navbar-expand-lg bg-body-tertiary"
-        data-bs-theme="dark"
+        className={`flex flex-col
+        ${show == false ? 'h-[100%]':'h-[0px]'}
+        laptop:flex-row
+  `}
       >
-        <div className="container-fluid">
-          <Link
-            className={`navbar-brand ${active}`}
-            onClick={() => onTabClick(index)}
-            href="/"
-          >
-            <img src={Logo} className="logo" alt="Logo" />
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link
-                  className={`nav-link ${active}`}
-                  onClick={() => onTabClick(index)}
-                  aria-current="page"
-                  href="/"
-                >
-                  Profile
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link " aria-current="page" href="/skills">
-                  Skills/Tools
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" href="/projects">
-                  Projects
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" href="/experience">
-                  Experience
-                </Link>
-              </li>
-            </ul>
-          </div>
+        <div className="flex justify-center items-center relative
+        max-tablet:border-b-[1.5px] border-[#2b3035]
+        laptop:justify-normal laptop:absolute
+        ">
+
+        <img src={Logo} className="w-[70px] h-[70px] " width={10} alt="Logo" />
+        <button className="absolute right-0 
+         hidden   mobile:block tablet:hidden
+        "
+        onClick={(e)=>{show == false ? setShow(true):setShow(false)}}
+        >
+        <img src={Hamburgerbar} className="w-[70px] h-[70px]  hidden mobile:block tablet:hidden" width={10} alt="HamburgerBar" />
+        </button>
         </div>
+
+    <div className={`w-[100%] flex flex-col justify-center items-center p-1
+      ${show ? '' : 'hidden'}
+      tablet:flex-row tablet:justify-center tablet:items-center tablet:h-[70px]`}>
+          {tabs.map((item, index) => (
+            <button className={` h-[40px]   w-[100px]
+             ${current == item ? 'text-[#ffff3f] ' :'text-[white]'
+             }
+            `}
+             onClick={(e)=>{setTab(item)}}
+            key={index}>
+              {item}
+            </button>
+          ))}
+      </div>
+
+    <div className={` 
+    w-[100%] laptop:flex flex-row justify-center items-center p-1
+    tabletL:flex 
+    mobile:hidden 
+    `}>
+          {tabs.map((item, index) => (
+            <button className={` h-[40px]   w-[100px]
+             ${current == item ? 'text-[#ffff3f] ' :'text-[white]'
+             }
+            `}
+             onClick={(e)=>{setTab(item)}}
+            key={index}>
+              {item}
+            </button>
+          ))}
+      </div>
       </nav>
     </div>
   );

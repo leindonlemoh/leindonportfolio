@@ -1,5 +1,10 @@
 // experience Items
-const expItems = [
+export const expItems = [
+  {
+    title: " Full Stack Web Developer",
+    institute: "MINT Center for Language Acquisition, Inc.",
+    date: "May 21, 2023 - Present",
+  },
   {
     title: " Full Stack Web Developer",
     institute: "KodeGo.ph",
@@ -37,4 +42,3 @@ const expItems = [
   },
 ];
 
-export default expItems.js;
