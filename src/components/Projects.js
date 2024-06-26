@@ -9,6 +9,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
+import Transcribe from "./images/transcribe.svg"
 import { Button, CardActionArea, CardActions } from "@mui/material";
 
 const Projects = () => {
@@ -98,6 +99,32 @@ const Projects = () => {
                     A Task creator
                     <br />
                     Tools : React.Js Css Mui Bootstrap
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </div>
+          {/* TRANSCRIBE */}
+                    <div className="project">
+            <Card sx={{ maxWidth: 345, borderRadius: "10% 10% 13% 8% " }}>
+              <CardActionArea>
+                <a href="https://transcribe-ivory.vercel.app/" target="_blank">
+                  <CardMedia
+                    component="img"
+                    className="card-image"
+                    height="140"
+                    image={Transcribe}
+                    alt="green iguana"
+                  />
+                </a>
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    Transcribe "Ongoing"
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    A Transcribe/Caption app
+                    <br />
+                    Tools : React.Js Css SunEditor
                   </Typography>
                 </CardContent>
               </CardActionArea>
