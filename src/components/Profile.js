@@ -12,7 +12,7 @@ const Profile = () => {
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "SamplePDF.pdf";
+        alink.download = "Leindon Reimoh Dilan CV.pdf";
         alink.click();
       });
     });
