@@ -5,7 +5,7 @@ import ProfImage from "./images/Image.png";
 const Profile = () => {
   const onDownloadClick = () => {
     // using Java Script method to get PDF file
-    fetch("cv.pdf").then((response) => {
+    fetch("LEINDON REIMOH C DILAN CV.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
