@@ -3,7 +3,7 @@ export const expItems = [
   {
     title: " Full Stack Web Developer",
     institute: "MINT Center for Language Acquisition, Inc.",
-    date: "May 21, 2023 - Present",
+    date: "May 21, 2023 - July 04, 2024",
   },
   {
     title: " Full Stack Web Developer",
