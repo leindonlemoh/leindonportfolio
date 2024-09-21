@@ -20,7 +20,7 @@ const onShowHide =()=>{
   return (
     <div className="section-projects">
       <Box>
-        <h3>Recent Projects</h3>
+        <h3 className="header">Recent Projects</h3>
 
         <div className="content-project">
 {
@@ -28,34 +28,51 @@ const onShowHide =()=>{
           {/* HRIS */}
        return(   
        <div className="project" key={index}>
-            <Card sx={{ maxWidth: 345, borderRadius: "10% 10% 13% 8% " }}>
+            <Card sx={{ maxWidth: 345, borderRadius: "25px 25px 25px 25px " }}>
               <CardActionArea>
                 <a href={items.link} target="_blank">
               <CardMedia
                  component="img"
                 className="card-image"
-                style={{ width: '100%', height: '140px', objectFit: 'cover' }}
+                style={{
+                   width: '100%', 
+                   height: '140px', 
+                   objectFit: 'cover' }}
                 image={items.image}
                 alt={items.title}
               />
                 </a>
                  </CardActionArea>
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <div className="title">
+                    <p>
                     {items.title}
-                  </Typography>
-                  <Typography variant="h5" color="text.secondary">
+                    </p>
+                  </div>
+                  <div className="content">
                     {items.content}
-                  </Typography>
-                  {items.more === true && showHide === false ? <button className="showBtn" onClick={onShowHide}>Show More</button> : null}
-                 <div onClick={onShowHide} style={{display:showHide === false ? "none": "block" }}>
+                  </div>
+                  {items.more === true && showHide === false ? 
+                  <div className="showBtn-container">
+                  <button className="showBtn" onClick={onShowHide}>Show More</button> 
+                  </div>
+                  
+                  : null}
+                 <div style={{display:showHide === false ? "none": "block" }}>
 
-                   <Typography variant="body2" color="text.secondary">
+                   <div className="details">
                     {items?.details ?  <div
           dangerouslySetInnerHTML={{ __html: items.details }}
         />:<></>}
-                   </Typography>
-                   {items.more === true &&<button className="hideBtn" onClick={onShowHide}>Hide</button>}
+                   </div>
+                   {items.more === true &&
+                   <div className="hideBtn-container">
+                   <button className="hideBtn" onClick={onShowHide}>
+                    Hide
+                    </button>
+                   </div>
+                   
+                   }
                    </div>
                 </CardContent>
              
