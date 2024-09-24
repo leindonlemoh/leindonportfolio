@@ -64,12 +64,16 @@ export const projItems = [
     `,
     }
     ,{
-        title:'Transcribe "Ongoing"',
+        title:'Transcribe "Polishing"',
         link:"https://transcribe-ivory.vercel.app/",
         image:Transcribe,
-        more:false,
-        content:"A transcriber app, Creating record of conversations,meeting or speech",
+        more:true,
+        content:"A transcriber app, Creating record of conversations,meeting or speech.",
         tools:"Next.Js TypeScript Tailwind MongoDb",
-        
+        details:`
+        Play an recorded Audio to transcribe <br/>
+        You can set some shortcut keys to play/pause or assign speaker <br/>
+        Note: still working on some bugs<br/>
+        `
     }
 ]
