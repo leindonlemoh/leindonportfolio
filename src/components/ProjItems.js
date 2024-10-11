@@ -3,6 +3,7 @@ import Calculator from "./images/calucu.png";
 import Todo from "./images/todo.png";
 import Transcribe from "./images/transcribe.png"
 import HRIS from "./images/HRIS.png"
+import Unslpash from "./images/unslpash.png"
 export const projItems = [
     {title:" Philippine Plebecite",
         link:"https://leindonlemoh.github.io/",
@@ -75,5 +76,13 @@ export const projItems = [
         You can set some shortcut keys to play/pause or assign speaker <br/>
         Note: still working on some bugs<br/>
         `
+    }    ,{
+        title:'Photo Gallery - Unsplash API"',
+        link:"https://unsplash-api-three.vercel.app/",
+        image:Unslpash,
+        more:false,
+        content:"Photo Explorer is a web app that allows users to search and browse high-quality images using the Unsplash API",
+        tools:"Next.Js TypeScript Sass Axios Unsplash-API",
+
     }
 ]

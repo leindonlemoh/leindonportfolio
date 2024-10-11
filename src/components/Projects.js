@@ -28,7 +28,8 @@ const Projects = () => {
                         style={{
                           width: '100%',
                           height: '140px',
-                          objectFit: 'cover'
+                          objectFit: 'cover',
+                          cursor:'pointer',
                         }}
                         image={item.image}
                         alt={item.title}
