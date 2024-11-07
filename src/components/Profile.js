@@ -5,7 +5,7 @@ import ProfImage from "./images/Image.png";
 const Profile = () => {
   const onDownloadClick = () => {
     // using Java Script method to get PDF file
-    fetch("LEINDON REIMOH C DILAN CV.pdf").then((response) => {
+    fetch("LEINDON REIMOH  DILAN RESUME_26.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
@@ -61,7 +61,7 @@ const Profile = () => {
         {/* button */}
         <div className="button">
           <button onClick={onDownloadClick} id="neonShadow">
-            <span>Download Cv</span>
+            <span>Download Resume</span>
           </button>
         </div>
       </div>
