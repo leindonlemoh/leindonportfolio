@@ -17,6 +17,7 @@ import Github from "./images/github.png";
 import WinSCP from "./images/winscp.png"
 import Sourcetree from "./images/sourcetree.png";
 import Postman from "./images/postman.png";
+import Vue from './images/Vue.png'
 export const skills = [
   { name: "Html", image: Html },
   { name: "Css", image: Css },
@@ -27,7 +28,7 @@ export const skills = [
   { name: "JavaScript", image: JavaScript },
   { name: "TypeScript", image: TypeScript }
 ];
-export const frameworks = [{name:"React.Js",image:ReactJs},{name:"Next.Js",image:NextJs}]
+export const frameworks = [{name:"React.Js",image:ReactJs},{name:"Next.Js",image:NextJs},{name:"Vue.js",image:Vue}]
 export   const backend = [{name:"Node.Js",image:NodeJs},{name:"Express.Js",image:ExpressJs},{name:"MySQL",image:MySQL},{name:"MongoDB",image:MongoDB}]
 
 export const tools = [{name:"GitLab",image:GitLab},{name:"GitHub",image:Github},{name:"WinSCP",image:WinSCP},{name:"Sourcetree",image:Sourcetree},{name:"Postman",image:Postman}]
