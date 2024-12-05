@@ -5,14 +5,14 @@ import ProfImage from "./images/Image.png";
 const Profile = () => {
   const onDownloadClick = () => {
     // using Java Script method to get PDF file
-    fetch("LEINDON REIMOH  DILAN RESUME_26.pdf").then((response) => {
+    fetch("LEINDON REIMOH  DILAN RESUME_.pdf").then((response) => {
       response.blob().then((blob) => {
         // Creating new object of PDF file
         const fileURL = window.URL.createObjectURL(blob);
         // Setting various property values
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "Leindon Reimoh Dilan CV.pdf";
+        alink.download = "Leindon Reimoh Dilan Resume.pdf";
         alink.click();
       });
     });
