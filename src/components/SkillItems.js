@@ -19,6 +19,7 @@ import Sourcetree from "./images/sourcetree.png";
 import Postman from "./images/postman.png";
 import Vue from "./images/Vue.png";
 import Supabase from "./images/supabase.png";
+import Laravel from "./images/laravel.png";
 export const skills = [
   { name: "Html", image: Html },
   { name: "Css", image: Css },
@@ -37,6 +38,7 @@ export const frameworks = [
 export const backend = [
   { name: "Node.Js", image: NodeJs },
   { name: "Express.Js", image: ExpressJs },
+  { name: "Laravel", image: Laravel },
   { name: "MySQL", image: MySQL },
   { name: "MongoDB", image: MongoDB },
   { name: "Supabase", image: Supabase },
