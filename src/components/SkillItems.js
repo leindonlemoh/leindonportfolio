@@ -20,6 +20,7 @@ import Postman from "./images/postman.png";
 import Vue from "./images/Vue.png";
 import Supabase from "./images/supabase.png";
 import Laravel from "./images/laravel.png";
+import Java from "./images/java.png";
 export const skills = [
   { name: "Html", image: Html },
   { name: "Css", image: Css },
@@ -29,6 +30,7 @@ export const skills = [
   { name: "Tailwind", image: Tailwind },
   { name: "JavaScript", image: JavaScript },
   { name: "TypeScript", image: TypeScript },
+  { name: "Java", image: Java },
 ];
 export const frameworks = [
   { name: "React.Js", image: ReactJs },
