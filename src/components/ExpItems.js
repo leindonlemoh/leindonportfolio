@@ -1,6 +1,11 @@
 // experience Items
 export const expItems = [
   {
+    title: "JAVA Programming NC III",
+    institute: "Armada Logics",
+    date: "March 17, 2025 - May 02, 2025",
+  },
+  {
     title: " Full Stack Web Developer",
     institute: "MINT Center for Language Acquisition, Inc.",
     date: "May 21, 2023 - July 04, 2024",
@@ -41,4 +46,3 @@ export const expItems = [
     date: "August 17, 2017 - November 23, 2017",
   },
 ];
-
