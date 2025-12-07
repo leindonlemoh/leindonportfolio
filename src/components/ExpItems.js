@@ -1,6 +1,11 @@
 // experience Items
 export const expItems = [
   {
+    title: "Computer Programmer",
+    institute: "Department of Social Welfare and Development",
+    date: "August 1, 2025 - Present",
+  },
+  {
     title: "JAVA Programming NC III",
     institute: "Armada Logics",
     date: "March 17, 2025 - May 02, 2025",

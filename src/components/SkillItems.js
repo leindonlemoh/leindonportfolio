@@ -21,6 +21,7 @@ import Vue from "./images/Vue.png";
 import Supabase from "./images/supabase.png";
 import Laravel from "./images/laravel.png";
 import Java from "./images/java.png";
+import CodeIgniter from "./images/codeigniter.png";
 export const skills = [
   { name: "Html", image: Html },
   { name: "Css", image: Css },
@@ -41,6 +42,7 @@ export const backend = [
   { name: "Node.Js", image: NodeJs },
   { name: "Express.Js", image: ExpressJs },
   { name: "Laravel", image: Laravel },
+  { name: "CodeIgniter", image: CodeIgniter },
   { name: "MySQL", image: MySQL },
   { name: "MongoDB", image: MongoDB },
   { name: "Supabase", image: Supabase },
